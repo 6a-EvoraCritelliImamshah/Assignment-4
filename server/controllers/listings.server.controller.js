@@ -74,7 +74,7 @@ exports.update = function(req, res) {
 /* Delete a listing */
 exports.delete = function(req, res) {
   var listing = req.listing;
-  Listing.remove({ code: listing.name }, function(err) {
+  Listing.remove({ code: listing.code }, function(err) {
     if (err) {
       console.log(err);
       res.status(400).send(err);
