@@ -111,6 +111,8 @@ describe('Listings CRUD tests', function() {
         done();
       })
     }
-    done();
+    else {
+      done();
+    }
   });
 });
